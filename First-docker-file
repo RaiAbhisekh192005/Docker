@@ -8,4 +8,4 @@ RUN apt-get update && \
 
 # Run the commands when the container starts
 CMD sudo apt update && \
-    echo "build successfully"
+    echo "build successfully" 
