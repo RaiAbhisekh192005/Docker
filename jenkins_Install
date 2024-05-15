@@ -1,11 +1,11 @@
-# Use the official Ubuntu 20.04 LTS image
-FROM ubuntu:20.04
+# Use the official Ubuntu 22.04 LTS image
+FROM ubuntu:22.04
 
 # Update the package lists
 RUN apt-get update
 
-# Install OpenJDK 11
-RUN apt-get install -y openjdk-11-jdk
+# Install OpenJDK 17
+RUN apt-get install -y openjdk-17-jdk
 
 # Install wget
 RUN apt-get install -y wget
