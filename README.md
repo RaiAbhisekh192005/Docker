@@ -11,7 +11,7 @@ sudo systemctl status docker
 
 update the user setting
 ```
-sudo suermod -aG docker ubuntu
+sudo usermod -aG docker ubuntu
 ```
 
 make sure to restart the system before runnning docke commands
