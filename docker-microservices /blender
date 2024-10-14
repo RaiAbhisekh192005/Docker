@@ -1,0 +1,11 @@
+docker run -d \
+  --name=blender \
+  --security-opt seccomp=unconfined `#optional` \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Etc/UTC \
+  -e SUBFOLDER=/ `#optional` \
+  -p 3007:3000 \
+  -p 3008:3001 \
+  --restart unless-stopped \
+  lscr.io/linuxserver/blender:latest
